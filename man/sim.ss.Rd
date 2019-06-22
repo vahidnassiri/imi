@@ -1,0 +1,28 @@
+\name{sim.ss}
+\alias{sim.ss}
+\docType{data}
+\title{
+sim.ss
+}
+\description{
+This dataset is a list contains the simulation results from the paper 'Iterative multiple imputation: a framework to determine the number of imputed datasets' for the scenario where \eqn{\sigma^2=1} and \eqn{\rho=0.2}. It contains the averaged distance between two steps (over 100 replications) for \eqn{M=500}. Also the selected final M for different \eqn{\epsilon}'s and \eqn{k_0}'s.
+}
+\usage{data("sim.ss")}
+\format{
+  The format is: List of 3 lists: the first list contains the averaged simulation results over 100 replications for parameter estimates, the second list contains the same but for the p-values of one sample and paired t-test, and the third list contains the final selected M for eahc scenario.
+
+}
+\details{
+One can use the function imi.make.plots to generate similar plots as in the paper (see Figure 1 and Figure 2).
+}
+\source{
+%%  ~~ reference to a publication or URL from which the data were obtained ~~
+}
+\references{
+%%  ~~ possibly secondary sources and usages ~~
+}
+\examples{
+data(sim.ss)
+imi.make.plots(sim.ss)
+}
+\keyword{datasets}
