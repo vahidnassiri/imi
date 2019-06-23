@@ -1,6 +1,6 @@
 imi.lm.conv <- function(data.imp,epsilon,resp,regressors,
-                        conv.plot=TRUE,
-                        dis.method='mahalanobis',mah.scale='combined',successive.valid=3){
+                        conv.plot=TRUE, dis.method='mahalanobis',
+                        mah.scale='combined',successive.valid=3){
   # possible methods for distance
   # dis.method='euclidean'
   # dis.method='inf.norm'
